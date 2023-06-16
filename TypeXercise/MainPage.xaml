@@ -12,40 +12,37 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <muxc:NavigationView x:Name="NavigationViewMain" PaneDisplayMode="Left" IsBackButtonVisible="Collapsed" IsSettingsVisible="False">
+        <muxc:NavigationView x:Name="NavigationViewMain" PaneDisplayMode="LeftMinimal" IsBackButtonVisible="Collapsed" IsSettingsVisible="False" ItemInvoked="NavigationViewMain_ItemInvoked" BackRequested="NavigationViewMain_BackRequested">
 
-            <!--<muxc:NavigationView.PaneHeader>
-                <Grid VerticalAlignment="Center" HorizontalAlignment="Stretch">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="40"/>
-                        <ColumnDefinition/>
-                    </Grid.ColumnDefinitions>
 
-                    <FontIcon Grid.Column="0" Glyph="&#xE765;" VerticalAlignment="Center" FontSize="20"/>
+            <!--<muxc:NavigationView.Header>
+                
+                <StackPanel Orientation="Horizontal" Spacing="10">
+                    
+                    <FontIcon Glyph="⌨" FontFamily="Segoe UI Emoji" FontSize="30" Height="30" Width="50" VerticalAlignment="Center"/>
                     <TextBlock Grid.Column="1" Text="TypeXercise" VerticalAlignment="Center" FontWeight="Black" FontSize="20"/>
-                </Grid>
+                </StackPanel>
+            </muxc:NavigationView.Header>-->
+            
+            <muxc:NavigationView.PaneHeader>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,30,0" Spacing="10">
+                    <FontIcon Glyph="⌨" FontFamily="Segoe UI Emoji" FontSize="30" Height="30" Width="50" VerticalAlignment="Center"/>
+                    <TextBlock Grid.Column="1" Text="TypeXercise" VerticalAlignment="Center" FontWeight="Black" FontSize="20"/>
+                </StackPanel>
             </muxc:NavigationView.PaneHeader>
-            -->
 
             <muxc:NavigationView.MenuItems>
 
                 <!--Home-->
                 <muxc:NavigationViewItemSeparator/>
 
-                <muxc:NavigationViewItem>
+                <muxc:NavigationViewItem Tag="TypeXercise.Views.PageHome">
                     <muxc:NavigationViewItem.Content>
                         <StackPanel Orientation="Horizontal" Spacing="15">
                             <FontIcon Glyph="🏠" FontFamily="Segoe UI Emoji" FontSize="30" Height="30" Width="50" VerticalAlignment="Center"/>
-                                <TextBlock Text="Home" FontWeight="Bold" VerticalAlignment="Center"/>
+                            <TextBlock Text="Home" FontWeight="Bold" VerticalAlignment="Center"/>
                         </StackPanel>
                     </muxc:NavigationViewItem.Content>
-                    
-                    <muxc:NavigationViewItem.MenuItems>
-                        
-                        <muxc:NavigationViewItem Content="Home">
-
-                        </muxc:NavigationViewItem>
-                    </muxc:NavigationViewItem.MenuItems>
                 </muxc:NavigationViewItem>
 
                 <!--Casual Typing-->
@@ -102,7 +99,6 @@
                         <muxc:NavigationViewItem Content="Clear Voice"/>
                         <muxc:NavigationViewItem Content="Noisy Voice"/>
                         <muxc:NavigationViewItem Content="Fast Speed Voice"/>
-                        <muxc:NavigationViewItem Content="Pilot Over Radio Voice"/>
 
                     </muxc:NavigationViewItem.MenuItems>
                 </muxc:NavigationViewItem>
@@ -115,8 +111,8 @@
             
             <muxc:NavigationView.PaneFooter>
                 
-                <StackPanel Spacing="5" Margin="0,10">
-
+                <StackPanel Spacing="0" Margin="0,10">
+                    <muxc:NavigationViewItemSeparator/>
                     <muxc:NavigationViewItem>
                         <muxc:NavigationViewItem.Content>
                             <StackPanel Orientation="Horizontal" Spacing="15">
@@ -125,7 +121,7 @@
                             </StackPanel>
                         </muxc:NavigationViewItem.Content>
                     </muxc:NavigationViewItem>
-
+                    <muxc:NavigationViewItemSeparator/>
                     <muxc:NavigationViewItem>
                         <muxc:NavigationViewItem.Content>
                             <StackPanel Orientation="Horizontal" Spacing="15">
@@ -134,7 +130,7 @@
                             </StackPanel>
                         </muxc:NavigationViewItem.Content>
                     </muxc:NavigationViewItem>
-
+                    <muxc:NavigationViewItemSeparator/>
                     <muxc:NavigationViewItem>
                         <muxc:NavigationViewItem.Content>
                             <StackPanel Orientation="Horizontal" Spacing="15">
@@ -143,10 +139,15 @@
                             </StackPanel>
                         </muxc:NavigationViewItem.Content>
                     </muxc:NavigationViewItem>
-
+                    <muxc:NavigationViewItemSeparator/>
                 </StackPanel>
             </muxc:NavigationView.PaneFooter>
-
+            
+            <ScrollViewer>
+                <Frame x:Name="ContentFrame" IsTabStop="True"
+                NavigationFailed="ContentFrame_NavigationFailed"/>
+            </ScrollViewer>
+            
         </muxc:NavigationView>
 
     </Grid>

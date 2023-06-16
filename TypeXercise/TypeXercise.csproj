@@ -125,6 +125,57 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\CasualTyping\PageCasualTyping.xaml.cs">
+      <DependentUpon>PageCasualTyping.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CasualTyping\PageContextTyping.xaml.cs">
+      <DependentUpon>PageContextTyping.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CasualTyping\PageWordTyping.xaml.cs">
+      <DependentUpon>PageWordTyping.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ImageTyping\PageCaptchaTextTyping.xaml.cs">
+      <DependentUpon>PageCaptchaTextTyping.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ImageTyping\PageDigitalTextTyping.xaml.cs">
+      <DependentUpon>PageDigitalTextTyping.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ImageTyping\PageHandwrittenTextTyping.xaml.cs">
+      <DependentUpon>PageHandwrittenTextTyping.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ImageTyping\PageImageTyping.xaml.cs">
+      <DependentUpon>PageImageTyping.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ImageTyping\PageSmallFontTextTyping.xaml.cs">
+      <DependentUpon>PageSmallFontTextTyping.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PageHome.xaml.cs">
+      <DependentUpon>PageHome.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CasualTyping\PageLetterTyping.xaml.cs">
+      <DependentUpon>PageLetterTyping.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tools\PageAbout.xaml.cs">
+      <DependentUpon>PageAbout.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tools\PageAccount.xaml.cs">
+      <DependentUpon>PageAccount.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tools\PageSettings.xaml.cs">
+      <DependentUpon>PageSettings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\VoiceTyping\PageClearVoiceTyping.xaml.cs">
+      <DependentUpon>PageClearVoiceTyping.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\VoiceTyping\PageFastSpeedVoiceTyping.xaml.cs">
+      <DependentUpon>PageFastSpeedVoiceTyping.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\VoiceTyping\PageNoisyVoiceTyping.xaml.cs">
+      <DependentUpon>PageNoisyVoiceTyping.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\VoiceTyping\PageVoiceTyping.xaml.cs">
+      <DependentUpon>PageVoiceTyping.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -151,6 +202,74 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Views\CasualTyping\PageCasualTyping.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\CasualTyping\PageContextTyping.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\CasualTyping\PageWordTyping.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ImageTyping\PageCaptchaTextTyping.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ImageTyping\PageDigitalTextTyping.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ImageTyping\PageHandwrittenTextTyping.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ImageTyping\PageImageTyping.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ImageTyping\PageSmallFontTextTyping.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PageHome.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\CasualTyping\PageLetterTyping.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Tools\PageAbout.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Tools\PageAccount.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Tools\PageSettings.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\VoiceTyping\PageClearVoiceTyping.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\VoiceTyping\PageFastSpeedVoiceTyping.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\VoiceTyping\PageNoisyVoiceTyping.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\VoiceTyping\PageVoiceTyping.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
@@ -169,6 +288,7 @@
   <ItemGroup>
     <Content Include="Assets\Icons\home\dynamic.json" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
